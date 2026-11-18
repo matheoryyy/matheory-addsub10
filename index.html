@@ -710,7 +710,7 @@
     <div class="hud">
       <div class="hud-box">
         <div class="hud-label">⏱️ 剩餘時間</div>
-        <div class="hud-value" id="timerDisplay">60s</div>
+        <div class="hud-value" id="timerDisplay">120s</div>
       </div>
       <div class="hud-box">
         <div class="hud-label">⭐ 目前得分</div>
@@ -771,7 +771,7 @@
 
       <div class="modal-brand">✨ MATHEORY 數理邏輯訓練 ✨</div>
       <h1 class="modal-title">Matheory 10內加減打地鼠遊戲</h1>
-      <p class="modal-subtitle">限時 60 秒！看清楚上方算式，敲擊舉著正確答案牌子的小地鼠吧！</p>
+      <p class="modal-subtitle">限時 120 秒！看清楚上方算式，敲擊舉著正確答案牌子的小地鼠吧！</p>
 
       <div class="level-list">
         <button class="level-btn" data-level="1">
@@ -1040,7 +1040,7 @@
       });
 
       // 隨答對題數略微加快節奏（最短保留 2.3 秒，確保小朋友看清楚算式）
-      const stayDuration = Math.max(2300, 3800 - correctCount * 65);
+      const stayDuration = Math.max(10000, 3800 - correctCount * 65);
       roundTimeout = setTimeout(() => {
         if (isPlaying && !roundLocked) {
           combo = 0;
